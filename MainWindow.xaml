@@ -1,0 +1,28 @@
+﻿<Window x:Class="DesifravimoSifravimoPrograma.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DesifravimoSifravimoPrograma" Height="350" Width="525">
+    <Grid>
+        <StackPanel Margin="10">
+            <Label Content="Pasirinkite veiksmą:"/>
+            <ComboBox x:Name="VeiksmoComboBox">
+                <ComboBoxItem Content="Šifruoti"/>
+                <ComboBoxItem Content="Dešifruoti"/>
+            </ComboBox>
+
+            <Label Content="Pasirinkite algoritmą:"/>
+            <ComboBox x:Name="AlgoritmoComboBox">
+                <ComboBoxItem Content="AES"/>
+                <ComboBoxItem Content="3DES"/>
+            </ComboBox>
+
+            <Label Content="Įveskite slaptažodį:"/>
+            <TextBox x:Name="SlaptazodisTextBox"/>
+
+            <Label Content="Įveskite bylos pavadinimą:"/>
+            <TextBox x:Name="BylosPavadinimasTextBox"/>
+
+            <Button Content="Vykdyti" Click="VykdytiButtonClick"/>
+        </StackPanel>
+    </Grid>
+</Window>
